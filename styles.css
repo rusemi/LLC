@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: white;
-    background-color: #0a3b5c; /* Dark blue from the logo */
+    background-color: #0a3b5c; 
 }
 
 p {
@@ -23,7 +23,7 @@ p {
 }
 
 .scroll-container img {
-    max-height: 300px; /* Adjust the size as needed */
+    max-height: 300px; 
     margin-right: 10px;
     scroll-snap-align: center;
     object-fit: cover;
@@ -41,15 +41,10 @@ img {
 }
 
 header {
-    background-color: #0a3b5c; /* Dark blue background to match the logo */
+    background-color: #0a3b5c; 
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-header .logo {
-    width: 200px; /* Adjust the size of the logo as needed */
-    margin-bottom: 20px;
 }
 
 nav ul {

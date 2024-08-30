@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: white;
+    background-color: #0a3b5c; /* Dark blue from the logo */
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 10px;
+    width: 100%;
+}
+
+.scroll-container img {
+    max-height: 300px; /* Adjust the size as needed */
+    margin-right: 10px;
+    scroll-snap-align: center;
+    object-fit: cover;
+}
+
+.scroll-container img:last-child {
+    margin-right: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #0a3b5c; /* Dark blue background to match the logo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 200px; /* Adjust the size of the logo as needed */
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 16px;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #004080;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for sections */
+    color: #0a3b5c; /* Dark blue text for readability */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #f5c042;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0a3b5c; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .project-item {
+        margin-bottom: 20px;
+    }
+
+    .clients-collage {
+        margin-bottom: 20px;
+    }
+
+    .scroll-container img {
+        max-height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        padding: 0 50px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2.5em;
+    }
+
+    .project-item {
+        margin-bottom: 30px;
+    }
+
+    .clients-collage {
+        margin-bottom: 30px;
+    }
+
+     .scroll-container img {
+        max-height: 500px; /* Further adjust height for very small screens */
+    }
+}
+
